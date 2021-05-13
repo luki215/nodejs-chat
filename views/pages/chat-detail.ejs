@@ -1,1 +1,25 @@
+<%- include('../layouts/header'); -%>
 
+<div class="card chat-detail__card">
+    <div class="card-header">
+        Cool chatík
+    </div>
+    <div class="card-body" id="messages">
+
+
+    </div>
+    <div class="card-footer">
+        <form id="sendMsgForm">
+            <div class="input-group">
+                <input type="hidden" id="userId" value="<%=userId%>">
+                <input type="text" class="form-control" placeholder="Napište zprávu..." aria-label="Recipient's username" id="msgInput">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Odeslat</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+
+<script src="chat.js"></script>
+
+<%- include('../layouts/footer'); -%>
